@@ -1,0 +1,149 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://em-content.zobj.net/source/microsoft/379/teacup-without-handle_1f375.png">
+  <title>Mocha Micks</title>
+  <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet'
+    integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- NOTE defer keeps the script from loading until after the html content has loaded -->
+  <script src="app.js" defer></script>
+</head>
+
+<body data-bs-theme="dark">
+  <header class="bg-warning p-2 fs-3 fw-bold text-dark">
+    <i class="bi-shop-window"></i> Fruit Stand
+  </header>
+
+  <main class="container">
+    <section class="row my-2">
+      <!-- STUB menu-items -->
+      <div class="col-md-8">
+        <section class="row g-3">
+
+          <div class="col-4">
+            <div class="card">
+              <div class="card-img-top">
+                <img class="card-img"
+                  src="https://images.unsplash.com/photo-1580636521086-7b0c742dd567?w=800&auto=format&fit=crop&q=60"
+                  alt="">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-white">Pomegranate</h5>
+                <p class="fw-bold text-end">$4.15</p>
+                <div class="text-end">
+                  <button class="btn btn-warning" onclick="addFruitByName('Pomegranate')"><i class="mdi mdi-plus"></i>
+                    Add to Order</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="card">
+              <div class="card-img-top">
+                <img class="card-img"
+                  src="https://images.unsplash.com/photo-1527546712175-827fa4321096?w=800&auto=format&fit=crop&q=60"
+                  alt="">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-white">Plantains</h5>
+                <p class="fw-bold text-end">$5.99</p>
+                <div class="text-end">
+                  <button class="btn btn-warning" onclick="addFruitByName('Plantains')"><i class="mdi mdi-plus"></i>
+                    Add to Order</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="card">
+              <div class="card-img-top">
+                <img class="card-img"
+                  src="https://images.unsplash.com/photo-1635843110565-cb35d1c03d86?w=800&auto=format&fit=crop&q=60"
+                  alt="">
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title text-white">Dragon Fruit</h5>
+                <p class="fw-bold text-end">$3.40</p>
+                <div class="text-end">
+                  <button class="btn btn-warning" onclick="addFruitByName('Dragon Fruit')"><i class="mdi mdi-plus"></i>
+                    Add to Order</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="card">
+              <div class="card-img-top">
+                <img class="card-img"
+                  src="https://images.unsplash.com/photo-1623312087025-016a988d14c5?w=800&auto=format&fit=crop&q=60"
+                  alt="">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-white">Durian</h5>
+                <p class="fw-bold text-end">$6.75</p>
+                <div class="text-end">
+                  <button class="btn btn-warning" onclick="addFruitByName('Durian')"><i class="mdi mdi-plus"></i>
+                    Add to Order</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <div class="card-img-top">
+                <img class="card-img"
+                  src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmFuYW5hc3xlbnwwfHwwfHx8MA%3D%3D"
+                  alt="">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-white">Bananas</h5>
+                <p class="fw-bold text-end">$2.75</p>
+                <div class="text-end">
+                  <button class="btn btn-warning" onclick="addFruitByName('Bananas')"><i class="mdi mdi-plus"></i>
+                    Add to Order</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+      </div>
+
+      <!-- STUB order stuff -->
+      <div class="col">
+        <section class="row">
+          <p class="fs-3 text-light fw-bold">Order</p>
+          <hr />
+
+          <div id="order-list" class="col-12">
+            <!-- Order items get injected here -->
+          </div>
+
+          <hr />
+          <div class="col-12 text-light fw-bold">
+            Total: <span id="order-total"></span>
+          </div>
+          <div class="col-12 text-end">
+            <button class="btn btn-warning" onclick="clearOrder()">Place Order</button>
+          </div>
+        </section>
+
+      </div>
+
+    </section>
+  </main>
+
+
+</body>
+
+</html>

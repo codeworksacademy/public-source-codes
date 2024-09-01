@@ -1,0 +1,25 @@
+/* BASIC STYLES HERE */
+.profile-picture {
+  height: 200px;
+  max-width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.profile-picture.profile-picture-sm {
+  height: 64px;
+}
+
+body {
+  font-family: "Newsreader", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-image: url(https://www.gmbinder.com/images/WGybwnz.png1), url(https://www.tribality.com/wp-content/uploads/2020/11/Tashas-Cauldron-of-Everything-alt-cover.jpg);
+  background-size: cover, 100%;
+  background-position: top, top;
+  background-attachment: fixed;
+}
+
+input[type="checkbox"] {
+  accent-color: var(--bs-primary);
+}

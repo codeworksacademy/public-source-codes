@@ -1,0 +1,23 @@
+/* BASIC STYLES HERE */
+.mdi-circle {
+  text-shadow: 0 0 4px black;
+}
+
+.card-img {
+  height: 8em;
+  object-fit: cover;
+}
+
+.car:hover .delete-button {
+  opacity: 1;
+  pointer-events: all;
+  transition: all .2s .4s ease;
+  transform: translateY(0px);
+}
+
+.delete-button {
+  background-color: rgb(216, 9, 9) !important;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(10px);
+}

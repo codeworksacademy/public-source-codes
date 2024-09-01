@@ -1,0 +1,57 @@
+:root {
+  --orange: #FF9C30;
+  --red: #FD3030;
+}
+
+.hero-section {
+  min-height: 40vh;
+  background-image: url('Hero Image.png');
+  background-position: center;
+}
+
+.magic-card {
+  background-color: #ff9b30d0;
+  backdrop-filter: blur(10px);
+  border: 0;
+}
+
+@media screen and (min-width: 768px) {
+
+  .magic-container {
+    position: relative;
+  }
+
+  .magic-card {
+    position: absolute;
+    line-height: 2.25em;
+    bottom: -8em;
+  }
+
+  .magic-offset {
+    margin-bottom: 8em;
+  }
+
+  /* body {
+    background-color: red;
+  } */
+}
+
+.shadow {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.37) !important;
+}
+
+.bg-warning,
+.btn-warning {
+  background-color: var(--orange) !important;
+  border-color: var(--orange) !important;
+}
+
+.bg-danger {
+  background-color: var(--red) !important;
+}
+
+.karantina {
+  font-family: "Karantina", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}

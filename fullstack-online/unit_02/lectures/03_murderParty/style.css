@@ -1,0 +1,24 @@
+.f-fancy {
+  font-family: "Yeseva One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "Merriweather", serif;
+  font-style: normal;
+}
+
+.bg-primary {
+  --bs-bg-opacity: .3;
+  border: 2px dashed rgb(var(--bs-primary-rgb));
+}
+
+.bg-danger {
+  --bs-bg-opacity: .3;
+  border: 2px dashed rgb(var(--bs-danger-rgb));
+}
+
+.dead {
+  filter: grayscale(.8) invert(1) drop-shadow(0px 0px 3px rgba(255, 255, 255, 0.493));
+}

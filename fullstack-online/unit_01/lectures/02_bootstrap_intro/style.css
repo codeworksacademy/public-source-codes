@@ -1,0 +1,40 @@
+.landing-phone {
+  height: 450px;
+}
+
+.phone-small {
+  height: 395px;
+}
+
+.circle-img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  /* height: 300px; */
+  border-radius: 100%;
+}
+
+.bg-image {
+  background-image: url(https://images.unsplash.com/photo-1611241893603-3c359704e0ee?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center;
+  background-size: cover;
+}
+
+.tablet-section {
+  min-height: 70vh;
+}
+
+.navbar-brand:hover {
+  color: rgba(var(--bs-primary-rgb));
+}
+
+h1 {
+  font-family: "Newsreader", serif;
+  font-size: 56px;
+  font-weight: 600;
+}
+
+h2 {
+  font-family: "Newsreader", serif;
+  font-size: 34px;
+  font-weight: 600;
+}

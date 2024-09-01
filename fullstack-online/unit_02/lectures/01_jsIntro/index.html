@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secret Code</title>
+  <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet'
+    integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-dark text-light">
+
+  <header class="text-primary text-center bg-black">
+    Secret Code
+  </header>
+
+  <main class="container py-3">
+    <section class="row">
+      <div id="user-code" class="col-12 text-center bg-black rounded my-1">
+        ****
+      </div>
+      <div class="col-12 text-center">
+        <!-- <button class="btn btn-primary" onclick="greeting()">Test</button> -->
+
+        <button class="btn btn-primary" onclick="inputOrangutan()">🦧</button>
+        <button class="btn btn-primary" onclick="inputDino()">🦖</button>
+        <button class="btn btn-primary" onclick="inputCowboy()">🤠</button>
+        <button class="btn btn-primary" onclick="input('🐈‍⬛')">🐈‍⬛</button>
+        <button class="btn btn-primary" onclick="input('🍗')">🍗</button>
+        <button class="btn btn-primary" onclick="input('🦄')">🦄</button>
+        <button class="btn btn-primary" onclick="input('🦥')">🦥</button>
+        <button class="btn btn-primary" onclick="input('🦀')">🦀</button>
+      </div>
+      <div class="col-12 text-center my-1">
+        <button class="btn btn-success" onclick="submitCode()">Submit</button>
+        <button class="btn btn-warning" onclick="clearInput()">Clear</button>
+      </div>
+      <div class="col-12">
+        <img id="secret-image" class="d-none img-fluid" src="secretImage.gif" alt="">
+      </div>
+    </section>
+  </main>
+
+
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
