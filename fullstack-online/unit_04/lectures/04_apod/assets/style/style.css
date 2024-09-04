@@ -1,0 +1,58 @@
+/* BASIC STYLES HERE */
+.profile-picture {
+  height: 200px;
+  max-width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.profile-picture.profile-picture-sm {
+  height: 64px;
+}
+
+body {
+  background-position: center;
+  background-size: cover;
+  text-shadow: 0px 0px 4px black;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+header input {
+  width: 150px !important;
+}
+
+.bg-glass {
+  background-color: rgba(61, 61, 61, 0.507);
+  backdrop-filter: blur(10px);
+  color-scheme: dark;
+}
+
+.list-preview {
+  height: 2em;
+  width: 4em;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+
+.btn-outline-danger {
+  color: red;
+}
+
+.hide-eye {
+  margin-left: auto;
+  margin-right: auto;
+  padding: .5em;
+  cursor: no-drop;
+}
+
+.hide-eye:hover+main {
+  /* background-color: red; */
+  opacity: 0;
+  transition: opacity .5s ease;
+}
+
+main {
+  transition: opacity 1.5s ease;
+}
