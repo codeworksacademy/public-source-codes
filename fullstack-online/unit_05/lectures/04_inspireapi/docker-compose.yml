@@ -1,0 +1,9 @@
+version: '3'
+services:
+  app:
+    image: your-dockerhub-username/04_inspireapi:latest
+    restart: unless-stopped
+    env_file:
+      - 04_inspireapi-env
+    ports:
+      - "3000:3000"

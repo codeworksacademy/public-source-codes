@@ -1,0 +1,20 @@
+{
+  "folders": [
+    {
+      "name": "01_catroundup",
+      "path": "01_catroundup"
+    },
+    {
+      "name": "02_gregslistapi",
+      "path": "02_gregslistapi"
+    },
+    {
+      "name": "03_broadwaybabies",
+      "path": "03_broadwaybabies"
+    },
+    {
+      "name": "04_inspireapi",
+      "path": "04_inspireapi"
+    }
+  ]
+}
